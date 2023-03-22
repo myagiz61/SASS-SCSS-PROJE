@@ -1,0 +1,126 @@
+@import"medias";
+@import"footer";
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+nav{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow:4px 1px 10px 1px rgba(0, 0, 0, 0.289);
+    #buton{
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background-color: rgb(9, 134, 34);
+        margin-left: 20px;
+        color: #f7f7f7;
+        &:hover{
+            background-color: #fb4f4f;
+            transition: 0.3s;
+        }
+    }
+    .navbar-{
+        position: absolute;
+        cursor: pointer;
+        margin-left:1500px;
+        margin-top: 30px;
+        font-size: 28px;
+        float: right;
+        &:hover{
+         transform: scale(1.2);
+         transition: 0.2s;
+        }
+    }
+    .navbar-logo{
+        margin-left: 60px;
+        position: absolute;
+        margin-top: 30px;
+        a{  
+            font-size: 30px;  
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .navbar-menu{
+        margin-right: 50px;
+        margin-top: 20px;
+        ul{float:right;
+            display: flex;
+            li{
+                margin: 12px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 18px;
+                   &:hover{
+                    color: #fb4f4f;
+                    transition: 0.3s;
+                   }
+                }
+            }
+        }
+    }
+}
+
+section{
+    display: flex;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 240px;
+    .container-img{
+        margin-top: -150px;
+        margin-left:150px ;
+    }
+    h1{
+        color:rgb(9, 134, 34);;
+        font-size: 60px;
+    }
+    h2{
+    font-size: 45px;
+    }
+p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.btn{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+}
+
+
+
+
+
+@mixin butons{
+padding: 10px 20px;
+border: none;
+outline: none;
+border-radius: 4px;
+background-color: rgb(9, 134, 34);
+margin-left: 20px;
+color: #f7f7f7;
+&:hover{
+    background-color: #fb4f4f;
+    transition: 0.3s;
+
+}
+}
+.btn{
+    @include butons;
+    a{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,32 @@
+@mixin trabzon{
+    color: #222222;
+    opacity: 1 ;
+    top:calc(50% - 1rem);
+    right: 20px;
+    font-size: 2rem;
+}
+
+/* footer */
+footer{
+    address{
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+    }
+    width: 1518px;
+    position: absolute;
+    margin-top: 670px;
+    background-color: #f7f7f7;
+    height: 80px;
+    & address a{
+        text-decoration: none;
+        color: #222222;
+        font-size: 20px;
+        @include trabzon;
+        &:hover{
+            text-decoration: underline;
+            transition: .3s;
+        }
+    }
+}
