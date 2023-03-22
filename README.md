@@ -1,8 +1,8 @@
-<h1>SASS VE SCSS KULLANILARAK YAPILAN PROJE</h1>
+<h1>SCSS KULLANILARAK YAPILAN PROJE</h1>
 
 <h3>Kullanılan Teknolijer</h3>
 
-<p>Sass Ve Scss Kullanılarak Yapıldı</p>
+<p>Scss Kullanılarak Yapıldı</p>
 
 <h3>Çalışır Hali</h3>
 
